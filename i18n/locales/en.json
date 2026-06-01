@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "services": "Services",
+    "approach": "Approach",
+    "caseStudies": "Case Studies",
+    "getInTouch": "Get in touch",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Chihuahua Advantage",
+    "title": "Engineered Intelligence.",
+    "titleHighlight": "Software Engineering Meets Human-Centric AI",
+    "subtitle": "We build custom software, scale existing platforms, and integrate AI into your operations. Backed by 7+ years of expertise, we don't just write code—we understand your business first to deliver solutions that reduce errors and accelerate growth.",
+    "primaryBtn": "Start a Project",
+    "secondaryBtn": "View Case Studies"
+  },
+  "services": {
+    "badge": "What We Do",
+    "title": "Full-Cycle Engineering & AI",
+    "subtitle": "Whether you need a product built from scratch or legacy code modernized, we provide the technical firepower.",
+    "cards": {
+      "software": {
+        "title": "End-to-End Development",
+        "desc": "From a blank canvas to a market-ready product. We design, build, and deploy custom software solutions perfectly tailored to your unique operational needs."
+      },
+      "legacy": {
+        "title": "Legacy & Existing Systems",
+        "desc": "Have a project that needs saving or scaling? We are stack-agnostic problem solvers who step in to optimize, maintain, and evolve your existing codebase."
+      },
+      "ai": {
+        "title": "Applied Artificial Intelligence",
+        "desc": "We help small and medium businesses adopt AI safely. Automate workflows, reduce human error, and gain speed without losing the human touch."
+      }
+    }
+  },
+  "seo": {
+    "title": "Controlla - Full-Cycle Software Engineering & AI Integration",
+    "description": "Controlla is a nearshore software engineering agency based in Chihuahua, Mexico. We build custom software, scale platforms, and integrate AI to transform your business.",
+    "faq1_q": "What services does Controlla provide?",
+    "faq1_a": "We provide end-to-end custom software development, legacy system modernization, and applied artificial intelligence solutions.",
+    "faq2_q": "Where is Controlla located?",
+    "faq2_a": "We are strategically positioned in Chihuahua, Mexico, allowing us to offer nearshore engineering talent with seamless real-time collaboration in US time zones.",
+    "faq3_q": "How does Controlla approach AI integration?",
+    "faq3_a": "We focus on safe, practical AI adoption for small and medium businesses, automating workflows and reducing errors without losing the human touch."
+  },
+  "about": {
+    "badge": "Core Advantages",
+    "cards": {
+      "mastery": {
+        "title": "7+ Years of Mastery",
+        "desc": "Nearly a decade of technical rigor across diverse stacks and industries. We bring battle-tested experience to ensure robust and scalable enterprise solutions.",
+        "tag1": "Established 2017",
+        "tag2": "Proven Record"
+      },
+      "location": {
+        "title": "Chihuahua Advantage",
+        "desc": "Strategically positioned in Chihuahua, Mexico. We offer seamless real-time collaboration in US time zones, deep cultural affinity, and world-class engineering talent at highly competitive rates.",
+        "tag1": "Time Zone Aligned",
+        "tag2": "Cost Efficient"
+      }
+    }
+  },
+  "approach": {
+    "badge": "Our Approach",
+    "title": "Empathy Before Code.",
+    "p1": "In an era of automated everything, we believe the best technical solutions start with human understanding. We sit down with your team, analyze your day-to-day operations, and identify the true friction points.",
+    "p2": "Only then do we deploy our engineered intelligence—fast, precise, and built around the people who will actually use it."
+  },
+  "caseStudies": {
+    "badge": "Success Stories",
+    "title": "Proven Impact",
+    "subtitle": "Discover how we've applied engineered intelligence to transform operations and scale digital platforms.",
+    "readBtn": "Read Case Study",
+    "modal": {
+      "challenge": "The Challenge",
+      "solution": "The Solution",
+      "techStack": "Tech Stack",
+      "integrations": "Integrations",
+      "visitWeb": "Visit Live Website",
+      "appStore": "App Store",
+      "playStore": "Play Store"
+    }
+  },
+  "cta": {
+    "title": "Ready to elevate your operations?",
+    "subtitle": "Whether you need a team to build your next big idea or an AI strategy to streamline your business, we are ready to partner with you.",
+    "btn": "Schedule a Consultation"
+  },
+  "footer": {
+    "description": "Controlla builds custom software and AI solutions that scale businesses globally from our HQ in Chihuahua.",
+    "contact": "Contact",
+    "social": "Social",
+    "rights": "All rights reserved."
+  }
+}

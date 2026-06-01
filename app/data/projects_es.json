@@ -1,0 +1,56 @@
+[
+  {
+    "id": "club-campestre",
+    "title": "Club Campestre",
+    "client": "Club Campestre Chihuahua",
+    "icon": "pi-flag",
+    "tags": ["Mobile App", "Fintech / POS", "Agentes IA"],
+    "shortDescription": "Una plataforma integral de gestión que incluye sistema POS, facturación en tiempo real y app móvil. Incorpora un protocolo MCP personalizado para interactuar de forma natural con el sistema mediante Agentes de IA.",
+    "coverImage": "/projects/campestre/cover_image.jpg",
+    "details": {
+      "problemSolved": "La mayoría de las operaciones, como la carga de consumos a crédito, ajustes manuales, generación de estados de cuenta y recopilación de información, se hacían manualmente, lo que generaba cuellos de botella y esperas prolongadas.",
+      "whatWeDid": "Construimos un sistema completo de gestión de socios y un POS para registrar consumos en las distintas áreas del club. La solución integra facturación, accesos biométricos (HikConnect) y una app móvil en tiempo real para consultar saldos y gestionar límites familiares mediante NIPs. Además, desarrollamos un protocolo MCP para conectar el sistema a cualquier agente de IA, permitiendo realizar consultas inmediatas sin onboarding previo.",
+      "techStack": [
+        "Vue.js",
+        "React Native",
+        "Expo",
+        "Laravel",
+        "Redis",
+        "Horizon"
+      ],
+      "integrations": ["Facturapi", "HikConnect", "Twilio", "Push Notifications"],
+      "links": {
+        "website": "",
+        "appStore": "https://apps.apple.com/mx/app/campestre-chihuahua/id6748659198",
+        "playStore": "https://play.google.com/store/apps/details?id=com.campestre.app&pli=1"
+      }
+    }
+  },
+  {
+    "id": "soy-likes",
+    "title": "SoyLikes",
+    "client": "SoyLikes",
+    "icon": "pi-thumbs-up",
+    "tags": ["Mobile App", "Influencer Marketing", "Producto desde Cero"],
+    "shortDescription": "Una innovadora app móvil que conecta comercios locales con creadores de contenido, permitiendo intercambiar promociones exclusivas por publicidad efectiva en redes sociales.",
+    "coverImage": "/projects/likes/cover_image.png",
+    "details": {
+      "problemSolved": "El cliente tenía una idea visionaria pero necesitaba transformarla en un producto real. Además, los comercios enfrentaban grandes dificultades para encontrar y validar a los influencers adecuados para sus marcas.",
+      "whatWeDid": "Participamos activamente en la conceptualización y desarrollo del producto desde cero. Construimos un ecosistema bilateral robusto donde el staff de SoyLikes puede curar y seleccionar meticulosamente a los influencers, conectándolos con restaurantes y negocios para crear campañas publicitarias exitosas mediante intercambios.",
+      "techStack": [
+        "Vue.js",
+        "React Native",
+        "Expo",
+        "Laravel",
+        "Redis",
+        "Horizon"
+      ],
+      "integrations": ["Stripe", "Twilio", "Push Notifications"],
+      "links": {
+        "website": "",
+        "appStore": "https://apps.apple.com/mx/app/soylikes/id6757937639",
+        "playStore": "https://play.google.com/store/apps/details?id=com.soylikes.app"
+      }
+    }
+  }
+]

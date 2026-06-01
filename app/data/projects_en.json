@@ -1,0 +1,56 @@
+[
+  {
+    "id": "club-campestre",
+    "title": "Club Campestre",
+    "client": "Club Campestre Chihuahua",
+    "icon": "pi-flag",
+    "tags": ["Mobile App", "Fintech / POS", "AI Agents"],
+    "shortDescription": "A comprehensive club management platform featuring a POS system, real-time member billing, and a mobile app. It includes a custom MCP protocol allowing users to interact naturally with the system via an AI Agent.",
+    "coverImage": "/projects/campestre/cover_image.jpg",
+    "details": {
+      "problemSolved": "Most operations—such as processing credit charges, making adjustments, generating account statements, and collecting member information—were done entirely manually, causing delays and administrative bottlenecks.",
+      "whatWeDid": "We built a complete member management and POS system to process consumption across all club areas. The solution includes automated billing, biometric access via HikConnect, and a real-time mobile app for members to check balances and set family PIN limits. Furthermore, we developed a custom MCP protocol, enabling seamless interaction through any AI agent with zero onboarding required.",
+      "techStack": [
+        "Vue.js",
+        "React Native",
+        "Expo",
+        "Laravel",
+        "Redis",
+        "Horizon"
+      ],
+      "integrations": ["Facturapi", "HikConnect", "Twilio", "Push Notifications"],
+      "links": {
+        "website": "",
+        "appStore": "https://apps.apple.com/mx/app/campestre-chihuahua/id6748659198",
+        "playStore": "https://play.google.com/store/apps/details?id=com.campestre.app&pli=1"
+      }
+    }
+  },
+  {
+    "id": "soy-likes",
+    "title": "SoyLikes",
+    "client": "SoyLikes",
+    "icon": "pi-thumbs-up",
+    "tags": ["Mobile App", "Influencer Marketing", "Product Strategy"],
+    "shortDescription": "An innovative mobile app connecting local businesses with content creators, facilitating the exchange of exclusive promotions for effective social media advertising.",
+    "coverImage": "/projects/likes/cover_image.png",
+    "details": {
+      "problemSolved": "The client had a visionary idea but needed a technical partner to build it from scratch. Additionally, businesses struggled to find and vet the right influencers for their brands.",
+      "whatWeDid": "We played a key role in product conceptualization and end-to-end development. We built a robust two-sided ecosystem where SoyLikes staff can meticulously curate influencers and connect them with restaurants and businesses, streamlining promotional campaigns and value exchanges.",
+      "techStack": [
+        "Vue.js",
+        "React Native",
+        "Expo",
+        "Laravel",
+        "Redis",
+        "Horizon"
+      ],
+      "integrations": ["Stripe", "Twilio", "Push Notifications"],
+      "links": {
+        "website": "",
+        "appStore": "https://apps.apple.com/mx/app/soylikes/id6757937639",
+        "playStore": "https://play.google.com/store/apps/details?id=com.soylikes.app"
+      }
+    }
+  }
+]

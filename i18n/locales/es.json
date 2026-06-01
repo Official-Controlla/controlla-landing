@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "approach": "Enfoque",
+    "caseStudies": "Casos de Éxito",
+    "getInTouch": "Contáctanos",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "badge": "Ventaja Chihuahua",
+    "title": "Engineered Intelligence.",
+    "titleHighlight": "Software Engineering unido a IA centrada en el humano",
+    "subtitle": "Construimos software a la medida, escalamos plataformas existentes e integramos IA en tus operaciones. Respaldados por más de 7 años de experiencia, no solo escribimos código—primero entendemos tu negocio para entregar soluciones que reducen errores y aceleran tu crecimiento.",
+    "primaryBtn": "Iniciar un Proyecto",
+    "secondaryBtn": "Ver Casos de Éxito"
+  },
+  "services": {
+    "badge": "Qué Hacemos",
+    "title": "Ingeniería de Ciclo Completo e IA",
+    "subtitle": "Ya sea que necesites un producto construido desde cero o modernizar código legacy, nosotros proveemos el poder técnico.",
+    "cards": {
+      "software": {
+        "title": "Desarrollo End-to-End",
+        "desc": "Desde un lienzo en blanco hasta un producto listo para el mercado. Diseñamos, construimos y desplegamos soluciones de software a la medida de tus operaciones."
+      },
+      "legacy": {
+        "title": "Sistemas Legacy y Existentes",
+        "desc": "¿Tienes un proyecto que necesita ser rescatado o escalado? Somos solucionadores de problemas agnósticos al stack que optimizan y evolucionan tu código actual."
+      },
+      "ai": {
+        "title": "Inteligencia Artificial Aplicada",
+        "desc": "Ayudamos a PyMEs a adoptar IA de manera segura. Automatiza flujos de trabajo, reduce errores humanos y gana velocidad sin perder el toque humano."
+      }
+    }
+  },
+  "seo": {
+    "title": "Controlla - Ingeniería de Software de Ciclo Completo e Integración de IA",
+    "description": "Controlla es una agencia de ingeniería de software nearshore en Chihuahua, México. Construimos software a la medida, escalamos plataformas e integramos IA para transformar tu negocio.",
+    "faq1_q": "¿Qué servicios ofrece Controlla?",
+    "faq1_a": "Proveemos desarrollo de software a la medida, modernización de sistemas legacy y soluciones de inteligencia artificial aplicada.",
+    "faq2_q": "¿Dónde se encuentra Controlla?",
+    "faq2_a": "Estamos estratégicamente ubicados en Chihuahua, México, lo que nos permite ofrecer talento de ingeniería nearshore con colaboración en tiempo real en zonas horarias de EE. UU.",
+    "faq3_q": "¿Cuál es el enfoque de Controlla para integrar IA?",
+    "faq3_a": "Nos enfocamos en una adopción de IA segura y práctica para PyMEs, automatizando flujos de trabajo y reduciendo errores sin perder el toque humano."
+  },
+  "about": {
+    "badge": "Ventajas Principales",
+    "cards": {
+      "mastery": {
+        "title": "Más de 7 Años de Maestría",
+        "desc": "Casi una década de rigor técnico en diversos stacks e industrias. Aportamos experiencia comprobada en batalla para garantizar soluciones empresariales robustas y escalables.",
+        "tag1": "Fundados en 2017",
+        "tag2": "Historial Comprobado"
+      },
+      "location": {
+        "title": "Ventaja Chihuahua",
+        "desc": "Estratégicamente posicionados en Chihuahua, México. Ofrecemos colaboración fluida en tiempo real en zonas horarias de EE. UU., profunda afinidad cultural y talento de ingeniería de clase mundial a tarifas altamente competitivas.",
+        "tag1": "Zonas Horarias Alineadas",
+        "tag2": "Costo Eficiente"
+      }
+    }
+  },
+  "approach": {
+    "badge": "Nuestro Enfoque",
+    "title": "Empatía antes que Código.",
+    "p1": "En una era de automatización, creemos que las mejores soluciones empiezan entendiendo a las personas. Nos sentamos con tu equipo, analizamos el día a día y encontramos los verdaderos cuellos de botella.",
+    "p2": "Solo entonces desplegamos nuestra ingeniería—rápida, precisa y construida alrededor de quienes realmente la van a usar."
+  },
+  "caseStudies": {
+    "badge": "Casos de Éxito",
+    "title": "Impacto Comprobado",
+    "subtitle": "Descubre cómo hemos aplicado nuestra ingeniería para transformar operaciones y escalar plataformas.",
+    "readBtn": "Leer Caso de Éxito",
+    "modal": {
+      "challenge": "El Reto",
+      "solution": "La Solución",
+      "techStack": "Tecnologías",
+      "integrations": "Integraciones",
+      "visitWeb": "Visitar Sitio",
+      "appStore": "App Store",
+      "playStore": "Play Store"
+    }
+  },
+  "cta": {
+    "title": "¿Listo para elevar tus operaciones?",
+    "subtitle": "Ya sea que necesites un equipo para tu próxima gran idea o una estrategia de IA, estamos listos para colaborar contigo.",
+    "btn": "Agendar Consulta"
+  },
+  "footer": {
+    "description": "Controlla construye software a la medida y soluciones de IA que escalan negocios desde nuestro HQ en Chihuahua.",
+    "contact": "Contacto",
+    "social": "Redes Sociales",
+    "rights": "Todos los derechos reservados."
+  }
+}
