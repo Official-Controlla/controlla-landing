@@ -26,6 +26,7 @@ const openProjectModal = (project: (typeof projectsDataEn)[0]) => {
 useSeoMeta({
   title: computed(() => t("seo.title")),
   description: computed(() => t("seo.description")),
+  keywords: computed(() => t("seo.keywords")),
   ogTitle: computed(() => t("seo.title")),
   ogDescription: computed(() => t("seo.description")),
   ogImage: defaultOgImage,
