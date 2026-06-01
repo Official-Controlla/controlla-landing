@@ -126,16 +126,12 @@ useHead(
           <Button
             :label="$t('hero.primaryBtn')"
             icon="pi pi-arrow-right"
-            class="text-lg px-6 py-3 shadow-lg"
-          />
-          <Button
-            :label="$t('hero.secondaryBtn')"
-            severity="secondary"
-            variant="outlined"
+            iconPos="right"
+            @click="$router.push('/contact')"
           />
         </div>
 
-        <div class="w-full max-w-5xl mx-auto relative h-[400px] md:h-[600px]">
+        <div class="w-full max-w-5xl mx-auto relative h-[550px] md:h-[600px]">
           <HeroGlobe />
           <div
             class="absolute inset-0 bg-gradient-to-t from-surface-50 via-transparent to-transparent dark:from-surface-950 pointer-events-none"
@@ -399,7 +395,7 @@ useHead(
         <Button
           :label="$t('cta.btn')"
           icon="pi pi-calendar"
-          class="text-lg px-8 py-4 shadow-lg rounded-full"
+          @click="$router.push('/contact')"
         />
       </div>
     </section>
