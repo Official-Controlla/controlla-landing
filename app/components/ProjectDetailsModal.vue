@@ -87,34 +87,41 @@ defineProps({
           </p>
         </section>
 
-        <hr class="border-surface-200 dark:border-surface-800" aria-hidden="true" />
+        <hr
+          class="border-surface-200 dark:border-surface-800"
+          aria-hidden="true"
+        />
 
         <!-- Mockups Gallery -->
-        <section v-if="project.details.gallery && project.details.gallery.length" aria-labelledby="gallery-heading">
+        <section
+          v-if="project.details.gallery && project.details.gallery.length"
+          aria-labelledby="gallery-heading"
+        >
           <header>
             <h3
               id="gallery-heading"
               class="text-xl font-bold text-surface-900 dark:text-surface-0 mb-6 flex items-center gap-2"
             >
               <i class="pi pi-images text-primary-500" aria-hidden="true"></i>
-              {{ $t("caseStudies.modal.gallery") || 'Platform Mockups' }}
+              {{ $t("caseStudies.modal.gallery") || "Platform Mockups" }}
             </h3>
           </header>
-          
-          <Carousel 
-            :value="project.details.gallery" 
-            :numVisible="1" 
-            :numScroll="1" 
+
+          <Carousel
+            :value="project.details.gallery"
+            :numVisible="1"
+            :numScroll="1"
             :circular="true"
             :autoplayInterval="4000"
             class="custom-gallery-carousel"
           >
             <template #item="slotProps">
               <div class="p-2 w-full flex justify-center">
-                <img 
-                  :src="slotProps.data" 
-                  :alt="`${project.title} mockup`" 
-                  class="rounded-xl shadow-lg border border-surface-200 dark:border-surface-700 max-h-[600px] object-contain w-auto mx-auto"
+                <Image
+                  :src="slotProps.data"
+                  :alt="`${project.title} mockup`"
+                  imageClass="rounded-xl shadow-lg border border-surface-200 dark:border-surface-700 max-h-[600px] object-contain w-auto mx-auto"
+                  preview
                 />
               </div>
             </template>
