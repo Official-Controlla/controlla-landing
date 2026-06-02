@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import projectsDataEn from "~/data/projects_en.json";
+
 const visible = defineModel<boolean>("visible", { default: false });
 
 defineProps({
   project: {
-    type: Object,
-    default: null,
+    type: Object as PropType<(typeof projectsDataEn)[0] | null>,
+    required: true,
   },
 });
 </script>

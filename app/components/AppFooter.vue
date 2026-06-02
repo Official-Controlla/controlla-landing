@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const { locale, setLocale } = useI18n();
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -48,17 +49,17 @@ const { locale, setLocale } = useI18n();
           >
           <NuxtLink
             class="text-sm text-surface-900 dark:text-surface-0 hover:text-primary-500 transition-colors duration-200"
-            to="/services"
+            :to="localePath('/services')"
             >{{ $t('nav.services') }}</NuxtLink
           >
           <NuxtLink
             class="text-sm text-surface-900 dark:text-surface-0 hover:text-primary-500 transition-colors duration-200"
-            to="/about"
+            :to="localePath('/about')"
             >{{ $t('nav.about') }}</NuxtLink
           >
           <NuxtLink
             class="text-sm text-surface-900 dark:text-surface-0 hover:text-primary-500 transition-colors duration-200"
-            to="/contact"
+            :to="localePath('/contact')"
             >{{ $t('nav.contact') }}</NuxtLink
           >
         </div>

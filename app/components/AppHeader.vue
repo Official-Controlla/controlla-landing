@@ -3,12 +3,13 @@ import { ref, computed } from "vue";
 import logoImg from "@/assets/images/logo.png";
 
 const { t } = useI18n();
+const localePath = useLocalePath();
 const mobileMenuOpen = ref(false);
 
 const navLinks = computed(() => [
-  { label: t("nav.services"), to: "/services" },
-  { label: t("nav.about"), to: "/about" },
-  { label: t("nav.contact"), to: "/contact" },
+  { label: t("nav.services"), to: localePath("/services") },
+  { label: t("nav.about"), to: localePath("/about") },
+  { label: t("nav.contact"), to: localePath("/contact") },
 ]);
 </script>
 
@@ -22,7 +23,7 @@ const navLinks = computed(() => [
       <!-- Brand -->
       <NuxtLink
         class="flex items-center hover:opacity-80 transition-opacity"
-        to="/"
+        :to="localePath('/')"
       >
         <img
           alt="Controlla Logo"
@@ -50,7 +51,7 @@ const navLinks = computed(() => [
           :label="$t('nav.getInTouch')"
           size="small"
           class="font-semibold uppercase tracking-wider text-[11px] px-4 py-2"
-          @click="$router.push('/contact')"
+          @click="$router.push(localePath('/contact'))"
         />
       </div>
 
@@ -92,7 +93,7 @@ const navLinks = computed(() => [
         <Button
           :label="$t('nav.getInTouch')"
           fluid
-          @click="$router.push('/contact')"
+          @click="$router.push(localePath('/contact'))"
         />
       </div>
     </Drawer>

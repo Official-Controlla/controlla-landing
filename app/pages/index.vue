@@ -4,6 +4,7 @@ import projectsDataEn from "~/data/projects_en.json";
 import projectsDataEs from "~/data/projects_es.json";
 
 const { locale, t } = useI18n();
+const localePath = useLocalePath();
 const projectsData = computed(() =>
   locale.value === "es" ? projectsDataEs : projectsDataEn,
 );
@@ -132,7 +133,7 @@ useHead(
             :label="$t('hero.primaryBtn')"
             icon="pi pi-arrow-right"
             iconPos="right"
-            @click="$router.push('/contact')"
+            @click="$router.push(localePath('/contact'))"
           />
         </nav>
 
@@ -438,7 +439,7 @@ useHead(
           <Button
             :label="$t('cta.btn')"
             icon="pi pi-calendar"
-            @click="$router.push('/contact')"
+            @click="$router.push(localePath('/contact'))"
           />
         </nav>
       </div>

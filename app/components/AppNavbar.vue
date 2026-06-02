@@ -9,11 +9,13 @@ const route = useRoute();
 const mobileOpen = ref(false);
 const scrollY = ref(0);
 
+const localePath = useLocalePath();
+
 const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "About us", to: "/about" },
-  { label: "How it works", to: "/how-it-works" },
-  { label: "Services", to: "/services" },
+  { label: "Home", to: localePath("/") },
+  { label: "About us", to: localePath("/about") },
+  { label: "How it works", to: localePath("/how-it-works") },
+  { label: "Services", to: localePath("/services") },
 ] as const;
 
 const isScrolled = computed(() => scrollY.value >= SCROLL_THRESHOLD);
@@ -46,7 +48,7 @@ watch(
   <header class="fixed inset-x-0 top-0 z-50 py-6 transition-shadow duration-300"
     :class="isScrolled ? 'shadow-lg shadow-black/45' : 'shadow-none'">
     <div class="default-container flex items-center justify-between gap-4">
-      <NuxtLink to="/" class="shrink-0" aria-label="CANO STEEL home">
+      <NuxtLink :to="localePath('/')" class="shrink-0" aria-label="CANO STEEL home">
         <Image :src="logo" alt="CANO STEEL — structural steel company logo" class="invert dark:invert-0" />
       </NuxtLink>
 
@@ -66,7 +68,7 @@ watch(
       </nav>
 
       <div class="flex shrink-0 items-center gap-2">
-        <Button :as="NuxtLinkComponent" to="/contact" label="Get a quote" class="hidden md:inline-flex" />
+        <Button :as="NuxtLinkComponent" :to="localePath('/contact')" label="Get a quote" class="hidden md:inline-flex" />
 
         <Button class="md:!hidden" icon="pi pi-bars" rounded text severity="secondary" aria-label="Open menu"
           @click="mobileOpen = true" />
@@ -81,7 +83,7 @@ watch(
           {{ item.label }}
         </NuxtLink>
         <Divider />
-        <Button :as="NuxtLinkComponent" to="/contact" label="Get a quote" fluid severity="contrast" class="mt-2" />
+        <Button :as="NuxtLinkComponent" :to="localePath('/contact')" label="Get a quote" fluid severity="contrast" class="mt-2" />
       </nav>
     </Drawer>
   </header>
