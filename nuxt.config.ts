@@ -78,6 +78,7 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
   ],
   i18n: {
+    baseUrl: "https://controlla.com.mx",
     locales: [
       { code: "en", language: "en-US", name: "English", file: "en.json" },
       { code: "es", language: "es-MX", name: "Español", file: "es.json" },
@@ -85,11 +86,7 @@ export default defineNuxtConfig({
     langDir: "locales",
     defaultLocale: "en",
     strategy: "prefix_except_default",
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: "i18n_redirected",
-      redirectOn: "root",
-    },
+    detectBrowserLanguage: false,
   },
   // Sin IPX: en dev las imágenes de ~/assets se sirven como /_nuxt/* desde Vite; IPX solo ve `public/`
   // en disco y no puede abrir esos assets, así que las peticiones a /_ipx/* fallan.

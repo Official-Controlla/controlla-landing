@@ -47,7 +47,7 @@ useHead(
         innerHTML: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Controlla",
+          name: t("seo.orgName"),
           url: canonicalUrl,
           logo: `${siteUrl}/favicon-96x96.png`,
           description: t("seo.description"),
