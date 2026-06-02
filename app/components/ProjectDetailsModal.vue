@@ -10,14 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <Dialog
-    v-model:visible="visible"
-    modal
-    dismissableMask
-    class="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mx-4"
-    contentClass="bg-surface-0 dark:bg-surface-900 rounded-b-2xl p-0"
-    headerClass="bg-surface-50 dark:bg-surface-950 rounded-t-2xl border-b border-surface-200 dark:border-surface-800"
-  >
+  <Dialog v-model:visible="visible" modal dismissableMask class="w-[95%]">
     <template #header>
       <div v-if="project" class="flex flex-col">
         <span
