@@ -86,6 +86,21 @@ export default defineNuxtConfig({
     defaultLocale: "en",
     strategy: "prefix_except_default",
     detectBrowserLanguage: false,
+    customRoutes: "config",
+    pages: {
+      about: {
+        en: "/about",
+        es: "/nosotros",
+      },
+      contact: {
+        en: "/contact",
+        es: "/contacto",
+      },
+      services: {
+        en: "/services",
+        es: "/servicios",
+      },
+    },
   },
   // Sin IPX: en dev las imágenes de ~/assets se sirven como /_nuxt/* desde Vite; IPX solo ve `public/`
   // en disco y no puede abrir esos assets, así que las peticiones a /_ipx/* fallan.

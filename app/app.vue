@@ -14,14 +14,16 @@ const head = useLocaleHead({
   addSeoAttributes: true,
 });
 
-useHead({
-  htmlAttrs: {
-    lang: head.value.htmlAttrs.lang,
-    dir: head.value.htmlAttrs.dir,
-  },
-  link: head.value.link,
-  meta: head.value.meta,
-});
+useHead(
+  computed(() => ({
+    htmlAttrs: {
+      lang: head.value.htmlAttrs.lang,
+      dir: head.value.htmlAttrs.dir,
+    },
+    link: head.value.link,
+    meta: head.value.meta,
+  }))
+);
 </script>
 
 <style>
