@@ -75,12 +75,13 @@
     "readBtn": "Read Case Study",
     "modal": {
       "challenge": "The Challenge",
-      "solution": "The Solution",
+      "solution": "Our Solution",
       "techStack": "Tech Stack",
       "integrations": "Integrations",
-      "visitWeb": "Visit Live Website",
+      "visitWeb": "Visit Website",
       "appStore": "App Store",
-      "playStore": "Play Store"
+      "playStore": "Play Store",
+      "gallery": "Platform Mockups"
     }
   },
   "cta": {
@@ -93,5 +94,37 @@
     "contact": "Contact",
     "social": "Social",
     "rights": "All rights reserved."
+  },
+  "contactPage": {
+    "badge": "Let's Connect",
+    "title": "Engineer Your Reality.",
+    "subtitle": "Initiate a dialogue with our technical architects to discuss bespoke AI solutions and intelligent infrastructure for your enterprise.",
+    "globalPresence": "Global Presence",
+    "hq": "Headquarters",
+    "hqDesc1": "Chihuahua, Mexico HQ",
+    "hqDesc2": "Operating at the intersection of LATAM talent and global tech standards.",
+    "directComm": "Direct Communication",
+    "email": "ltorres{'@'}controlla.com.mx",
+    "emailDesc": "Average response time: < 4 hours during business days.",
+    "formTitle": "Project Inquiry",
+    "formDesc": "Provide details about your operational requirements, and our engineering team will prepare a structured response.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "e.g. Jane Doe",
+    "emailLabel": "Corporate Email",
+    "emailPlaceholder": "jane{'@'}company.com",
+    "projectType": "Project Classification",
+    "projectTypePlaceholder": "Select an area of expertise...",
+    "typeOptions": {
+      "ai": "AI Integration & Automation",
+      "data": "Data Engineering Pipeline",
+      "custom": "Custom Software Architecture",
+      "consulting": "Technical Consulting"
+    },
+    "message": "Scope & Objectives",
+    "messagePlaceholder": "Briefly describe your current technical challenges or the specific outcomes you aim to achieve...",
+    "submit": "Get a Quotation",
+    "submitting": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again later."
   }
 }

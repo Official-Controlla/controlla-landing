@@ -19,6 +19,7 @@
         "Horizon"
       ],
       "integrations": ["Facturapi", "HikConnect", "Twilio", "Push Notifications"],
+      "gallery": [],
       "links": {
         "website": "",
         "appStore": "https://apps.apple.com/mx/app/campestre-chihuahua/id6748659198",
@@ -46,6 +47,7 @@
         "Horizon"
       ],
       "integrations": ["Stripe", "Twilio", "Push Notifications"],
+      "gallery": [],
       "links": {
         "website": "",
         "appStore": "https://apps.apple.com/mx/app/soylikes/id6757937639",

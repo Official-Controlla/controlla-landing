@@ -75,12 +75,13 @@
     "readBtn": "Leer Caso de Éxito",
     "modal": {
       "challenge": "El Reto",
-      "solution": "La Solución",
+      "solution": "Nuestra Solución",
       "techStack": "Tecnologías",
       "integrations": "Integraciones",
       "visitWeb": "Visitar Sitio",
       "appStore": "App Store",
-      "playStore": "Play Store"
+      "playStore": "Play Store",
+      "gallery": "Mockups de la Plataforma"
     }
   },
   "cta": {
@@ -93,5 +94,37 @@
     "contact": "Contacto",
     "social": "Redes Sociales",
     "rights": "Todos los derechos reservados."
+  },
+  "contactPage": {
+    "badge": "Conectemos",
+    "title": "Construye tu Realidad.",
+    "subtitle": "Inicia un diálogo con nuestros arquitectos técnicos para discutir soluciones de IA a medida e infraestructura inteligente para tu empresa.",
+    "globalPresence": "Presencia Global",
+    "hq": "Oficinas Centrales",
+    "hqDesc1": "HQ en Chihuahua, México",
+    "hqDesc2": "Operando en la intersección del talento LATAM y los estándares tecnológicos globales.",
+    "directComm": "Comunicación Directa",
+    "email": "ltorres{'@'}controlla.com.mx",
+    "emailDesc": "Tiempo promedio de respuesta: < 4 horas en días hábiles.",
+    "formTitle": "Consulta de Proyecto",
+    "formDesc": "Proporciona detalles sobre tus requerimientos operativos, y nuestro equipo preparará una propuesta estructurada.",
+    "fullName": "Nombre Completo",
+    "fullNamePlaceholder": "Ej. Juan Pérez",
+    "emailLabel": "Correo Corporativo",
+    "emailPlaceholder": "juan{'@'}empresa.com",
+    "projectType": "Clasificación del Proyecto",
+    "projectTypePlaceholder": "Selecciona un área de experiencia...",
+    "typeOptions": {
+      "ai": "Integración de IA y Automatización",
+      "data": "Ingeniería de Datos",
+      "custom": "Arquitectura de Software a la Medida",
+      "consulting": "Consultoría Técnica"
+    },
+    "message": "Alcance y Objetivos",
+    "messagePlaceholder": "Describe brevemente tus desafíos técnicos actuales o los resultados específicos que deseas alcanzar...",
+    "submit": "Solicitar Cotización",
+    "submitting": "Enviando...",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje. Inténtalo de nuevo más tarde."
   }
 }

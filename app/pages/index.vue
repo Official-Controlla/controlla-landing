@@ -95,49 +95,57 @@ useHead(
   <main class="flex flex-col flex-1">
     <!-- Hero Section -->
     <section
+      aria-labelledby="hero-heading"
       class="relative pt-32 pb-32 bg-surface-50 dark:bg-surface-950 overflow-hidden tech-grid min-h-dvh-screen flex items-center"
     >
       <div
         class="default-container relative z-10 flex flex-col items-center text-center"
       >
-        <div
-          class="inline-flex items-center gap-2 bg-surface-100 dark:bg-surface-800 border border-surface-200 dark:border-surface-700 rounded-full px-4 py-1.5 mb-8"
-        >
-          <span class="w-2 h-2 rounded-full bg-primary-500"></span>
-          <span
-            class="text-[11px] text-surface-600 dark:text-surface-300 uppercase tracking-wider font-semibold"
-            >{{ $t("hero.badge") }}</span
+        <header class="flex flex-col items-center">
+          <div
+            class="inline-flex items-center gap-2 bg-surface-100 dark:bg-surface-800 border border-surface-200 dark:border-surface-700 rounded-full px-4 py-1.5 mb-8"
           >
-        </div>
+            <span class="w-2 h-2 rounded-full bg-primary-500" aria-hidden="true"></span>
+            <span
+              class="text-[11px] text-surface-600 dark:text-surface-300 uppercase tracking-wider font-semibold"
+              >{{ $t("hero.badge") }}</span
+            >
+          </div>
 
-        <h1
-          class="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-surface-900 dark:text-surface-0"
-        >
-          {{ $t("hero.title") }}<br />
-          <span class="text-primary-500">{{ $t("hero.titleHighlight") }}</span>
-        </h1>
+          <h1
+            id="hero-heading"
+            class="text-5xl md:text-7xl font-bold tracking-tight mb-6 text-surface-900 dark:text-surface-0"
+          >
+            {{ $t("hero.title") }}<br />
+            <span class="text-primary-500">{{ $t("hero.titleHighlight") }}</span>
+          </h1>
 
-        <p
-          class="text-xl md:text-2xl text-surface-600 dark:text-surface-300 mb-10 leading-relaxed"
-        >
-          {{ $t("hero.subtitle") }}
-        </p>
+          <p
+            class="text-xl md:text-2xl text-surface-600 dark:text-surface-300 mb-10 leading-relaxed"
+          >
+            {{ $t("hero.subtitle") }}
+          </p>
+        </header>
 
-        <div class="flex flex-wrap justify-center gap-4 mb-16">
+        <nav aria-label="Hero Call to Action" class="flex flex-wrap justify-center gap-4 mb-16">
           <Button
             :label="$t('hero.primaryBtn')"
             icon="pi pi-arrow-right"
             iconPos="right"
             @click="$router.push('/contact')"
           />
-        </div>
+        </nav>
 
-        <div class="w-full max-w-5xl mx-auto relative h-[550px] md:h-[600px]">
+        <figure 
+          aria-label="Interactive 3D Globe Visualization"
+          class="w-full max-w-5xl mx-auto relative h-[550px] md:h-[600px]"
+        >
           <HeroGlobe />
           <div
             class="absolute inset-0 bg-gradient-to-t from-surface-50 via-transparent to-transparent dark:from-surface-950 pointer-events-none"
+            aria-hidden="true"
           ></div>
-        </div>
+        </figure>
       </div>
     </section>
 
@@ -145,39 +153,46 @@ useHead(
     <section
       class="py-32 bg-surface-0 dark:bg-surface-900 relative tech-grid"
       id="services"
+      aria-labelledby="services-heading"
     >
       <div class="default-container">
-        <div class="flex items-center gap-4 mb-12">
-          <span
-            class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
-          ></span>
-          <span
-            class="text-xs text-surface-500 dark:text-surface-400 uppercase tracking-widest font-semibold"
-            >{{ $t("services.badge") }}</span
-          >
-          <span
-            class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
-          ></span>
-        </div>
+        <header class="mb-16">
+          <div class="flex items-center gap-4 mb-12">
+            <span
+              class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
+              aria-hidden="true"
+            ></span>
+            <span
+              class="text-xs text-surface-500 dark:text-surface-400 uppercase tracking-widest font-semibold"
+              >{{ $t("services.badge") }}</span
+            >
+            <span
+              class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
+              aria-hidden="true"
+            ></span>
+          </div>
 
-        <div class="text-center mb-16 mx-auto">
-          <h2
-            class="text-4xl md:text-5xl text-surface-900 dark:text-surface-0 tracking-tight mb-4 font-bold"
-          >
-            {{ $t("services.title") }}
-          </h2>
-          <p class="text-lg text-surface-600 dark:text-surface-400">
-            {{ $t("services.subtitle") }}
-          </p>
-        </div>
+          <div class="text-center mx-auto">
+            <h2
+              id="services-heading"
+              class="text-4xl md:text-5xl text-surface-900 dark:text-surface-0 tracking-tight mb-4 font-bold"
+            >
+              {{ $t("services.title") }}
+            </h2>
+            <p class="text-lg text-surface-600 dark:text-surface-400">
+              {{ $t("services.subtitle") }}
+            </p>
+          </div>
+        </header>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Service 1 -->
-          <div
+          <article
             class="bg-surface-50 dark:bg-surface-950 border border-surface-200 dark:border-surface-800 rounded-2xl p-8 hover:shadow-xl dark:hover:shadow-surface-950 transition-all duration-300 group"
           >
             <div
               class="w-12 h-12 rounded-lg bg-primary-500/10 dark:bg-primary-500/20 flex items-center justify-center mb-6 text-primary-500"
+              aria-hidden="true"
             >
               <i class="pi pi-code text-2xl"></i>
             </div>
@@ -189,14 +204,15 @@ useHead(
             <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
               {{ $t("services.cards.software.desc") }}
             </p>
-          </div>
+          </article>
 
           <!-- Service 2 -->
-          <div
+          <article
             class="bg-surface-50 dark:bg-surface-950 border border-surface-200 dark:border-surface-800 rounded-2xl p-8 hover:shadow-xl dark:hover:shadow-surface-950 transition-all duration-300 group"
           >
             <div
               class="w-12 h-12 rounded-lg bg-sky-500/10 dark:bg-sky-500/20 flex items-center justify-center mb-6 text-sky-500"
+              aria-hidden="true"
             >
               <i class="pi pi-wrench text-2xl"></i>
             </div>
@@ -208,18 +224,20 @@ useHead(
             <p class="text-surface-600 dark:text-surface-400 leading-relaxed">
               {{ $t("services.cards.legacy.desc") }}
             </p>
-          </div>
+          </article>
 
           <!-- Service 3 -->
-          <div
+          <article
             class="bg-surface-50 dark:bg-surface-950 border border-surface-200 dark:border-surface-800 rounded-2xl p-8 hover:shadow-xl dark:hover:shadow-surface-950 transition-all duration-300 group glass-card relative overflow-hidden"
           >
             <div
               class="absolute inset-0 bg-primary-500/5 dark:bg-primary-500/10 tech-grid opacity-50"
+              aria-hidden="true"
             ></div>
             <div class="relative z-10">
               <div
                 class="w-12 h-12 rounded-lg bg-surface-900 dark:bg-surface-0 flex items-center justify-center mb-6 text-surface-0 dark:text-surface-900 shadow-lg"
+                aria-hidden="true"
               >
                 <i class="pi pi-sparkles text-2xl"></i>
               </div>
@@ -232,7 +250,7 @@ useHead(
                 {{ $t("services.cards.ai.desc") }}
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -241,20 +259,27 @@ useHead(
     <section
       class="py-32 bg-surface-50 dark:bg-surface-950 relative tech-grid"
       id="about"
+      aria-labelledby="about-heading"
     >
       <div class="default-container">
-        <div class="flex items-center gap-4 mb-12">
-          <span
-            class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
-          ></span>
-          <span
-            class="text-xs text-surface-500 dark:text-surface-400 uppercase tracking-widest font-semibold"
-            >{{ $t("about.badge") }}</span
-          >
-          <span
-            class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
-          ></span>
-        </div>
+        <header class="flex flex-col items-center mb-12">
+          <h2 id="about-heading" class="sr-only">{{ $t("about.badge") }}</h2>
+          <div class="flex items-center gap-4 w-full">
+            <span
+              class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
+              aria-hidden="true"
+            ></span>
+            <span
+              class="text-xs text-surface-500 dark:text-surface-400 uppercase tracking-widest font-semibold"
+              aria-hidden="true"
+              >{{ $t("about.badge") }}</span
+            >
+            <span
+              class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
+              aria-hidden="true"
+            ></span>
+          </div>
+        </header>
 
         <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
           <AdvantageCard
@@ -294,43 +319,49 @@ useHead(
     <section
       class="py-32 bg-surface-900 dark:bg-surface-950 text-surface-0 relative overflow-hidden"
       id="expertise"
+      aria-labelledby="expertise-heading"
     >
-      <div class="absolute inset-0 opacity-20 mesh-gradient"></div>
+      <div class="absolute inset-0 opacity-20 mesh-gradient" aria-hidden="true"></div>
       <div class="default-container relative z-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <div
-              class="inline-flex items-center gap-2 bg-surface-800 border border-surface-700 rounded-full px-4 py-1.5 mb-8"
-            >
-              <span class="w-2 h-2 rounded-full bg-primary-400"></span>
-              <span
-                class="text-[11px] text-surface-300 uppercase tracking-wider font-semibold"
-                >{{ $t("approach.badge") }}</span
+            <header>
+              <div
+                class="inline-flex items-center gap-2 bg-surface-800 border border-surface-700 rounded-full px-4 py-1.5 mb-8"
               >
+                <span class="w-2 h-2 rounded-full bg-primary-400" aria-hidden="true"></span>
+                <span
+                  class="text-[11px] text-surface-300 uppercase tracking-wider font-semibold"
+                  >{{ $t("approach.badge") }}</span
+                >
+              </div>
+              <h2 id="expertise-heading" class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+                {{ $t("approach.title") }}
+              </h2>
+            </header>
+            <div class="space-y-8">
+              <p class="text-lg text-surface-300 leading-relaxed">
+                {{ $t("approach.p1") }}
+              </p>
+              <p class="text-lg text-surface-300 leading-relaxed">
+                {{ $t("approach.p2") }}
+              </p>
             </div>
-            <h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-              {{ $t("approach.title") }}
-            </h2>
-            <p class="text-lg text-surface-300 leading-relaxed mb-8">
-              {{ $t("approach.p1") }}
-            </p>
-            <p class="text-lg text-surface-300 leading-relaxed">
-              {{ $t("approach.p2") }}
-            </p>
           </div>
-          <div
+          <figure
             class="relative h-[400px] rounded-2xl border border-surface-700 overflow-hidden shadow-2xl glow-border"
           >
-            <div class="absolute inset-0 tech-grid opacity-30"></div>
+            <div class="absolute inset-0 tech-grid opacity-30" aria-hidden="true"></div>
             <div
               class="absolute inset-0 bg-gradient-to-tr from-surface-900 via-transparent to-primary-900/40 mix-blend-overlay"
+              aria-hidden="true"
             ></div>
             <img
               src="/assets/images/empathy.jpeg"
-              alt="Team collaborating"
+              alt="Controlla software engineering team collaborating in the office"
               class="w-full h-full object-cover mix-blend-luminosity opacity-80"
             />
-          </div>
+          </figure>
         </div>
       </div>
     </section>
@@ -339,31 +370,37 @@ useHead(
     <section
       class="py-32 bg-surface-0 dark:bg-surface-900 relative tech-grid"
       id="case-studies"
+      aria-labelledby="case-studies-heading"
     >
       <div class="default-container">
-        <div class="flex items-center gap-4 mb-12">
-          <span
-            class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
-          ></span>
-          <span
-            class="text-xs text-surface-500 dark:text-surface-400 uppercase tracking-widest font-semibold"
-            >{{ $t("caseStudies.badge") }}</span
-          >
-          <span
-            class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
-          ></span>
-        </div>
+        <header class="mb-16">
+          <div class="flex items-center gap-4 mb-12">
+            <span
+              class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
+              aria-hidden="true"
+            ></span>
+            <span
+              class="text-xs text-surface-500 dark:text-surface-400 uppercase tracking-widest font-semibold"
+              >{{ $t("caseStudies.badge") }}</span
+            >
+            <span
+              class="h-px bg-surface-200 dark:bg-surface-700 flex-grow"
+              aria-hidden="true"
+            ></span>
+          </div>
 
-        <div class="text-center mb-16 max-w-2xl mx-auto">
-          <h2
-            class="text-4xl md:text-5xl text-surface-900 dark:text-surface-0 tracking-tight mb-4 font-bold"
-          >
-            {{ $t("caseStudies.title") }}
-          </h2>
-          <p class="text-lg text-surface-600 dark:text-surface-400">
-            {{ $t("caseStudies.subtitle") }}
-          </p>
-        </div>
+          <div class="text-center max-w-2xl mx-auto">
+            <h2
+              id="case-studies-heading"
+              class="text-4xl md:text-5xl text-surface-900 dark:text-surface-0 tracking-tight mb-4 font-bold"
+            >
+              {{ $t("caseStudies.title") }}
+            </h2>
+            <p class="text-lg text-surface-600 dark:text-surface-400">
+              {{ $t("caseStudies.subtitle") }}
+            </p>
+          </div>
+        </header>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <CaseStudyCard
@@ -382,172 +419,35 @@ useHead(
 
     <!-- Call to Action -->
     <section
+      aria-labelledby="cta-heading"
       class="py-32 bg-surface-50 dark:bg-surface-950 relative tech-grid text-center"
     >
       <div class="default-container relative z-10 max-w-3xl mx-auto">
-        <h2
-          class="text-4xl md:text-6xl text-surface-900 dark:text-surface-0 tracking-tight mb-6 font-bold"
-        >
-          {{ $t("cta.title") }}
-        </h2>
-        <p class="text-xl text-surface-600 dark:text-surface-400 mb-10">
-          {{ $t("cta.subtitle") }}
-        </p>
-        <Button
-          :label="$t('cta.btn')"
-          icon="pi pi-calendar"
-          @click="$router.push('/contact')"
-        />
+        <header>
+          <h2
+            id="cta-heading"
+            class="text-4xl md:text-6xl text-surface-900 dark:text-surface-0 tracking-tight mb-6 font-bold"
+          >
+            {{ $t("cta.title") }}
+          </h2>
+          <p class="text-xl text-surface-600 dark:text-surface-400 mb-10">
+            {{ $t("cta.subtitle") }}
+          </p>
+        </header>
+        <nav aria-label="Primary Call to Action">
+          <Button
+            :label="$t('cta.btn')"
+            icon="pi pi-calendar"
+            @click="$router.push('/contact')"
+          />
+        </nav>
       </div>
     </section>
 
     <!-- Project Details Modal -->
-    <Dialog
+    <ProjectDetailsModal
       v-model:visible="isProjectModalOpen"
-      modal
-      dismissableMask
-      class="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mx-4"
-      contentClass="bg-surface-0 dark:bg-surface-900 rounded-b-2xl p-0"
-      headerClass="bg-surface-50 dark:bg-surface-950 rounded-t-2xl border-b border-surface-200 dark:border-surface-800"
-    >
-      <template #header>
-        <div v-if="selectedProject" class="flex flex-col">
-          <span
-            class="text-sm font-semibold uppercase tracking-wider text-surface-500"
-            >{{ selectedProject.client }}</span
-          >
-          <span
-            class="text-2xl font-bold text-surface-900 dark:text-surface-0"
-            >{{ selectedProject.title }}</span
-          >
-        </div>
-      </template>
-
-      <div v-if="selectedProject" class="flex flex-col pb-8">
-        <!-- Hero Image -->
-        <div class="w-full h-64 sm:h-80 relative overflow-hidden mb-8">
-          <img
-            :src="selectedProject.coverImage"
-            :alt="selectedProject.title"
-            class="w-full h-full object-cover"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-surface-0 dark:from-surface-900 via-transparent to-transparent"
-          ></div>
-        </div>
-
-        <div class="px-6 sm:px-10 flex flex-col gap-10">
-          <!-- The Challenge -->
-          <div>
-            <h3
-              class="text-xl font-bold text-surface-900 dark:text-surface-0 mb-3 flex items-center gap-2"
-            >
-              <i class="pi pi-exclamation-triangle text-orange-500"></i>
-              {{ $t("caseStudies.modal.challenge") }}
-            </h3>
-            <p
-              class="text-lg text-surface-600 dark:text-surface-400 leading-relaxed"
-            >
-              {{ selectedProject.details.problemSolved }}
-            </p>
-          </div>
-
-          <!-- The Solution -->
-          <div>
-            <h3
-              class="text-xl font-bold text-surface-900 dark:text-surface-0 mb-3 flex items-center gap-2"
-            >
-              <i class="pi pi-check-circle text-green-500"></i>
-              {{ $t("caseStudies.modal.solution") }}
-            </h3>
-            <p
-              class="text-lg text-surface-600 dark:text-surface-400 leading-relaxed"
-            >
-              {{ selectedProject.details.whatWeDid }}
-            </p>
-          </div>
-
-          <hr class="border-surface-200 dark:border-surface-800" />
-
-          <!-- Specs (Tech & Integrations) -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div v-if="selectedProject.details.techStack.length">
-              <h4
-                class="font-bold text-xs uppercase tracking-widest mb-4 text-surface-500"
-              >
-                {{ $t("caseStudies.modal.techStack") }}
-              </h4>
-              <div class="flex flex-wrap gap-2">
-                <Chip
-                  v-for="tech in selectedProject.details.techStack"
-                  :key="tech"
-                  :label="tech"
-                  class="text-xs bg-surface-100 dark:bg-surface-800"
-                />
-              </div>
-            </div>
-
-            <div v-if="selectedProject.details.integrations.length">
-              <h4
-                class="font-bold text-xs uppercase tracking-widest mb-4 text-surface-500"
-              >
-                {{ $t("caseStudies.modal.integrations") }}
-              </h4>
-              <div class="flex flex-wrap gap-2">
-                <Chip
-                  v-for="int in selectedProject.details.integrations"
-                  :key="int"
-                  :label="int"
-                  variant="outlined"
-                  class="text-xs"
-                />
-              </div>
-            </div>
-          </div>
-
-          <!-- Links (Stores / Web) -->
-          <div
-            v-if="
-              selectedProject.details.links.website ||
-              selectedProject.details.links.appStore ||
-              selectedProject.details.links.playStore
-            "
-            class="flex flex-wrap gap-4 mt-2"
-          >
-            <Button
-              v-if="selectedProject.details.links.website"
-              as="a"
-              :href="selectedProject.details.links.website"
-              target="_blank"
-              :label="$t('caseStudies.modal.visitWeb')"
-              icon="pi pi-external-link"
-              size="small"
-            />
-            <Button
-              v-if="selectedProject.details.links.appStore"
-              as="a"
-              :href="selectedProject.details.links.appStore"
-              target="_blank"
-              :label="$t('caseStudies.modal.appStore')"
-              icon="pi pi-apple"
-              severity="secondary"
-              variant="outlined"
-              size="small"
-            />
-            <Button
-              v-if="selectedProject.details.links.playStore"
-              as="a"
-              :href="selectedProject.details.links.playStore"
-              target="_blank"
-              :label="$t('caseStudies.modal.playStore')"
-              icon="pi pi-android"
-              severity="secondary"
-              variant="outlined"
-              size="small"
-            />
-          </div>
-        </div>
-      </div>
-    </Dialog>
+      :project="selectedProject"
+    />
   </main>
 </template>

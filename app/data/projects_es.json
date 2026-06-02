@@ -18,7 +18,8 @@
         "Redis",
         "Horizon"
       ],
-      "integrations": ["Facturapi", "HikConnect", "Twilio", "Push Notifications"],
+      "integrations": ["Facturapi", "HikConnect", "Twilio", "Notificaciones Push"],
+      "gallery": [],
       "links": {
         "website": "",
         "appStore": "https://apps.apple.com/mx/app/campestre-chihuahua/id6748659198",
@@ -45,7 +46,8 @@
         "Redis",
         "Horizon"
       ],
-      "integrations": ["Stripe", "Twilio", "Push Notifications"],
+      "integrations": ["Stripe", "Twilio", "Notificaciones Push"],
+      "gallery": [],
       "links": {
         "website": "",
         "appStore": "https://apps.apple.com/mx/app/soylikes/id6757937639",
