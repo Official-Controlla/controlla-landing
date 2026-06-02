@@ -38,7 +38,6 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      htmlAttrs: { lang: "en" },
       titleTemplate: "%s",
       meta: [
         { name: "theme-color", content: "#2563eb" },
