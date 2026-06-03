@@ -27,9 +27,9 @@ const { title = "Engineered Intelligence", description = "" } = defineProps<{
     </div>
 
     <div
-      class="flex items-center justify-between mt-auto pt-4 border-t-2 border-solid border-[#27272a]"
+      class="flex items-center justify-between pt-2 border-t-2 border-solid border-[#27272a]"
     >
-      <div class="text-3xl font-semibold text-[#d4d4d8]">controlla.com.mx</div>
+      <div class="text-2xl font-semibold text-[#d4d4d8]">controlla.com.mx</div>
       <div class="text-2xl font-bold text-[#60a5fa]">
         Nearshore Software & AI
       </div>
