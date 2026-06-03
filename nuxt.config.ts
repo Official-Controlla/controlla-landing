@@ -21,9 +21,13 @@ const Preset = definePreset(Aura, {
 });
 
 export default defineNuxtConfig({
+  devtools: { enabled: true },
   site: {
     url: "https://controlla.com.mx",
-    name: "Controlla",
+    name: "Controlla Technologies",
+    description:
+      "Controlla Technologies is a nearshore software engineering agency. We build custom software, scale existing platforms, and integrate applied AI to transform your enterprise operations.",
+    defaultLocale: "en",
   },
   runtimeConfig: {
     public: {
@@ -32,7 +36,6 @@ export default defineNuxtConfig({
     },
   },
   compatibilityDate: "2025-07-15",
-  devtools: { enabled: true },
   nitro: {
     preset: "netlify",
   },
@@ -72,8 +75,7 @@ export default defineNuxtConfig({
     "@primevue/nuxt-module",
     "@nuxt/fonts",
     "@nuxt/image",
-    "@nuxtjs/robots",
-    "@nuxtjs/sitemap",
+    "@nuxtjs/seo",
     "@nuxtjs/i18n",
   ],
   i18n: {

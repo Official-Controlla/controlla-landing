@@ -6,54 +6,34 @@ import "maplibre-gl/dist/maplibre-gl.css";
 const { t } = useI18n();
 const config = useRuntimeConfig();
 
-const route = useRoute();
-const canonicalUrl = `${config.public.siteUrl.replace(/\/$/, "")}${route.path}`;
-const defaultOgImage = `${config.public.siteUrl.replace(/\/$/, "")}/og_image.png`;
-
 useSeoMeta({
   title: computed(() => t("contactPage.seo.title")),
   description: computed(() => t("contactPage.seo.description")),
   keywords: computed(() => t("contactPage.seo.keywords")),
-  ogTitle: computed(() => t("contactPage.seo.title")),
-  ogDescription: computed(() => t("contactPage.seo.description")),
-  ogImage: defaultOgImage,
-  ogUrl: canonicalUrl,
-  ogType: "website",
-  twitterCard: "summary_large_image",
-  twitterTitle: computed(() => t("contactPage.seo.title")),
-  twitterDescription: computed(() => t("contactPage.seo.description")),
-  twitterImage: defaultOgImage,
 });
 
-useHead(
-  computed(() => ({
-    script: [
-      {
-        type: "application/ld+json",
-        innerHTML: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ProfessionalService",
-          name: t("seo.orgName"),
-          image: defaultOgImage,
-          "@id": canonicalUrl,
-          url: canonicalUrl,
-          email: "ltorres@controlla.com.mx",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Chihuahua",
-            addressRegion: "CHH",
-            addressCountry: "MX",
-          },
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: 28.6625774,
-            longitude: -106.1260559,
-          },
-        }),
-      },
-    ],
-  }))
-);
+defineOgImage("Controlla.takumi", {
+  title: computed(() => t("contactPage.seo.title")),
+  description: computed(() => t("contactPage.seo.description")),
+});
+
+useSchemaOrg([
+  defineLocalBusiness({
+    "@type": "ProfessionalService",
+    name: computed(() => t("seo.orgName")),
+    email: "ltorres@controlla.com.mx",
+    address: {
+      addressLocality: "Chihuahua",
+      addressRegion: "CHH",
+      addressCountry: "MX",
+    },
+    geo: {
+      latitude: 28.6625774,
+      longitude: -106.1260559,
+    },
+  }),
+  defineWebPage(),
+]);
 
 const mapContainer = ref<HTMLElement | null>(null);
 let map: maplibregl.Map | null = null;

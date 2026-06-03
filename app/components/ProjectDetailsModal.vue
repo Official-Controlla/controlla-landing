@@ -6,7 +6,7 @@ const visible = defineModel<boolean>("visible", { default: false });
 defineProps({
   project: {
     type: Object as PropType<(typeof projectsDataEn)[0] | null>,
-    required: true,
+    default: null,
   },
 });
 </script>
