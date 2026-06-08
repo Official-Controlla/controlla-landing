@@ -132,5 +132,47 @@
     "submitting": "Sending...",
     "success": "Message sent successfully!",
     "error": "Failed to send message. Please try again later."
+  },
+  "servicesPage": {
+    "seo": {
+      "title": "Software Engineering & AI Services | Controlla",
+      "description": "We build custom software, scale legacy platforms, and integrate AI into your operations. High-performance nearshore engineering from Chihuahua, Mexico.",
+      "keywords": "software engineering, custom software development, nearshore outsourcing, legacy modernization, applied artificial intelligence, AI integration, controlla services"
+    },
+    "badge": "01 // SERVICES",
+    "heroTitle": "Engineered Intelligence for the Modern Enterprise.",
+    "heroSubtitle": "We bridge the gap between human-centric business logic and high-performance machine intelligence. Our specialized services are designed to build efficiency, accelerate delivery, and future-proof your digital operations.",
+    "cards": {
+      "software": {
+        "title": "Full-Cycle Software Engineering",
+        "desc": "From a blank canvas to a market-ready product. We design, build, and deploy custom software solutions perfectly tailored to your unique operational needs.",
+        "feat1": "End-to-End Development",
+        "feat2": "Custom Architecture",
+        "link": "Explore Engineering"
+      },
+      "nearshore": {
+        "title": "Nearshore Delivery Model",
+        "desc": "High-velocity engineering teams embedded in your time zone. We deliver scalable, robust software architecture with uncompromising code quality from our Chihuahua, Mexico HQ.",
+        "link": "View Delivery Model"
+      },
+      "legacy": {
+        "title": "Legacy Modernization",
+        "desc": "Have a project that needs saving or scaling? We step in to optimize, maintain, and evolve your existing codebase to meet modern infrastructure standards.",
+        "link": "Discover Modernization"
+      },
+      "ai": {
+        "title": "Applied Artificial Intelligence",
+        "desc": "We help small and medium businesses adopt AI safely. Automate workflows, reduce human error, and gain speed without losing the human touch.",
+        "feat1": "Process Automation",
+        "feat2": "Intelligent Decision Support",
+        "link": "See AI Integration"
+      }
+    },
+    "cta": {
+      "title": "Ready to Engineer Your Future?",
+      "subtitle": "Partner with us to build intelligent, scalable solutions that drive measurable business impact.",
+      "btn1": "Start a Project",
+      "btn2": "Schedule a Consultation"
+    }
   }
 }

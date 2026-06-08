@@ -132,5 +132,47 @@
     "submitting": "Enviando...",
     "success": "¡Mensaje enviado con éxito!",
     "error": "Error al enviar el mensaje. Inténtalo de nuevo más tarde."
+  },
+  "servicesPage": {
+    "seo": {
+      "title": "Servicios de Ingeniería de Software e IA | Controlla",
+      "description": "Construimos software a la medida, escalamos plataformas existentes e integramos Inteligencia Artificial en tus operaciones desde nuestra sede en Chihuahua.",
+      "keywords": "servicios de software, desarrollo a la medida, agencia nearshore mexico, modernización legacy, inteligencia artificial aplicada, integración IA, servicios controlla"
+    },
+    "badge": "01 // SERVICIOS",
+    "heroTitle": "Inteligencia Diseñada para la Empresa Moderna.",
+    "heroSubtitle": "Cerramos la brecha entre la lógica de negocio y la inteligencia de alto rendimiento. Nuestros servicios están diseñados para generar eficiencia, acelerar las entregas y preparar tus operaciones digitales para el futuro.",
+    "cards": {
+      "software": {
+        "title": "Ingeniería de Software de Ciclo Completo",
+        "desc": "Desde un lienzo en blanco hasta un producto listo para el mercado. Diseñamos, construimos y desplegamos soluciones de software a la medida de tus necesidades operativas únicas.",
+        "feat1": "Desarrollo End-to-End",
+        "feat2": "Arquitectura a la Medida",
+        "link": "Explorar Ingeniería"
+      },
+      "nearshore": {
+        "title": "Modelo de Entrega Nearshore",
+        "desc": "Equipos de ingeniería de alta velocidad integrados en tu zona horaria. Entregamos arquitectura escalable y robusta con calidad de código intransigente desde nuestra sede en Chihuahua.",
+        "link": "Ver Modelo de Entrega"
+      },
+      "legacy": {
+        "title": "Modernización de Sistemas Legacy",
+        "desc": "¿Tienes un proyecto que necesita ser rescatado o escalado? Intervenimos para optimizar, mantener y evolucionar tu código existente para cumplir con estándares modernos.",
+        "link": "Descubrir Modernización"
+      },
+      "ai": {
+        "title": "Inteligencia Artificial Aplicada",
+        "desc": "Ayudamos a PyMEs a adoptar IA de manera segura. Automatiza flujos de trabajo, reduce errores humanos y gana velocidad sin perder el toque humano.",
+        "feat1": "Automatización de Procesos",
+        "feat2": "Soporte Inteligente a Decisiones",
+        "link": "Ver Integración de IA"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Diseñar tu Futuro?",
+      "subtitle": "Colabora con nosotros para construir soluciones inteligentes y escalables que impulsen un impacto medible en tu negocio.",
+      "btn1": "Iniciar un Proyecto",
+      "btn2": "Agendar Consulta"
+    }
   }
 }
