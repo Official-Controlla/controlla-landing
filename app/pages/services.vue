@@ -221,6 +221,9 @@ useSchemaOrg([
       </div>
     </section>
 
+    <!-- Integrations Carousel -->
+    <IntegrationsCarousel class="mb-32" />
+
     <!-- CTA Section -->
     <section class="max-w-5xl mx-auto px-6 lg:px-8 relative z-10">
       <div

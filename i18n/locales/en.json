@@ -133,6 +133,12 @@
     "success": "Message sent successfully!",
     "error": "Failed to send message. Please try again later."
   },
+  "integrations": {
+    "badge": "Integrations",
+    "title": "Integrations We Master",
+    "subtitle": "We connect your software with the best tools and platforms in the market.",
+    "footerText": "Can't find the integration you're looking for? Don't worry. Our engineering team constantly trains and adapts to master any SDK, API, or technology your project requires."
+  },
   "servicesPage": {
     "seo": {
       "title": "Software Engineering & AI Services | Controlla",

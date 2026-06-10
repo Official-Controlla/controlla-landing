@@ -133,6 +133,12 @@
     "success": "¡Mensaje enviado con éxito!",
     "error": "Error al enviar el mensaje. Inténtalo de nuevo más tarde."
   },
+  "integrations": {
+    "badge": "Integraciones",
+    "title": "Integraciones que Dominamos",
+    "subtitle": "Conectamos tu software con las mejores herramientas y plataformas del mercado.",
+    "footerText": "¿No encuentras la integración que buscas? No te preocupes. Nuestro equipo de ingeniería se capacita y adapta constantemente para dominar cualquier SDK, API o tecnología que tu proyecto requiera."
+  },
   "servicesPage": {
     "seo": {
       "title": "Servicios de Ingeniería de Software e IA | Controlla",

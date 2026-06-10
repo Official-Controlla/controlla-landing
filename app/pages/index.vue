@@ -402,6 +402,9 @@ useSchemaOrg([
       </div>
     </section>
 
+    <!-- Integrations Carousel -->
+    <IntegrationsCarousel />
+
     <!-- Call to Action -->
     <section
       aria-labelledby="cta-heading"
